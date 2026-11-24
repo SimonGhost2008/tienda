@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Tienda - ProductoController",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Crear producto",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Camiseta negra\",\n  \"descripcion\": \"Algodón talla M\",\n  \"precio\": 45000,\n  \"stock\": 20\n}" },
+        "url": { "raw": "http://localhost:8080/api/productos", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "productos"] }
+      }
+    },
+    {
+      "name": "Listar productos",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:8080/api/productos", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "productos"] }
+      }
+    },
+    {
+      "name": "Obtener producto por id",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:8080/api/productos/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "productos", "1"] }
+      }
+    },
+    {
+      "name": "Actualizar producto",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": { "mode": "raw", "raw": "{\n  \"nombre\": \"Camiseta blanca\",\n  \"descripcion\": \"Algodón talla L\",\n  \"precio\": 50000,\n  \"stock\": 15\n}" },
+        "url": { "raw": "http://localhost:8080/api/productos/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "productos", "1"] }
+      }
+    },
+    {
+      "name": "Eliminar producto",
+      "request": {
+        "method": "DELETE",
+        "url": { "raw": "http://localhost:8080/api/productos/1", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api", "productos", "1"] }
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+TIENDA-COMPLETO (Spring Boot 3 + JPA/Hibernate + MariaDB)
+
+1. Ejecuta crear_base_de_datos.sql en MariaDB.
+2. Abre la carpeta en IntelliJ (File > Open > pom.xml > Open as Project), JDK 17.
+3. Activa Settings > Build > Compiler > Annotation Processors > Enable annotation processing (Lombok).
+4. En src/main/resources/application.properties cambia spring.datasource.password.
+5. Ejecuta TiendaApplication (puerto 8080).
+6. En Postman: Import > tienda-postman.json y prueba las 5 peticiones.
